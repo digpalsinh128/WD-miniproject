@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Web Coding Hackathon",
+        "category": "Technical",
+        "date": "25th October 2026",
+        "venue": "Computer Lab 1",
+        "description": "Showcase your HTML, CSS, and JS skills in a 6-hour coding challenge."
+    },
+    {
+        "title": "Python & AI Seminar",
+        "category": "Workshop",
+        "date": "28th October 2026",
+        "venue": "Seminar Hall B",
+        "description": "Learn the basics of Python programming and Artificial Intelligence."
+    },
+    {
+        "title": "Annual Music & Dance Fest",
+        "category": "Cultural",
+        "date": "5th November 2026",
+        "venue": "College Ground",
+        "description": "Perform live or cheer for your friends at the biggest cultural night."
+    },
+    {
+        "title": "Inter-Department Cricket",
+        "category": "Sports",
+        "date": "12th November 2026",
+        "venue": "Sports Complex",
+        "description": "Form your department team and compete for the trophy."
+    }
+]

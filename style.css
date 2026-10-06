@@ -1,0 +1,275 @@
+/* ==========================================================================
+   Basic & Clean CSS Stylesheet for College Event Portal
+   Uses fundamental CSS rules: Colors, Flexbox, Grid, Form & Table styling
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0f2027;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.8rem 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #cfd8dc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #2a5298;
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    margin-bottom: 0.3rem;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.event-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card h3 {
+    margin: 0.5rem 0;
+    color: #2c3e50;
+}
+
+.event-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.badge.tech { background-color: #2563eb; }
+.badge.workshop { background-color: #059669; }
+.badge.cultural { background-color: #db2777; }
+.badge.sports { background-color: #d97706; }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: auto;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-submit {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+}
+
+.btn-delete {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #dc2626;
+    color: white;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #b91c1c;
+}
+
+/* Form Card */
+.form-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 0.65rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* Alerts */
+.alert {
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.alert.success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.alert.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+/* Table Styling */
+.table-container {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.data-table th, .data-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.data-table th {
+    background-color: #1e3c72;
+    color: white;
+    font-weight: 600;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.event-tag {
+    background-color: #e0e7ff;
+    color: #3730a3;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.no-data {
+    padding: 2rem;
+    text-align: center;
+    color: #777;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    background-color: #0f2027;
+    color: #aaa;
+    font-size: 0.9rem;
+}
